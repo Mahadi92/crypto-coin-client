@@ -1,0 +1,77 @@
+@import "./_variables";
+
+//container
+.c_container {
+  width: 80%;
+  margin: 0 auto;
+
+  @media (max-width: 1440px) {
+    width: 90%;
+  }
+  @media (max-width: 768px) {
+    width: 95%;
+  }
+}
+
+.c_container__left {
+  width: 90%;
+  margin-left: auto;
+
+  @media (max-width: 768px) {
+    width: 95%;
+  }
+}
+
+
+.c_container__right {
+  width: 90%;
+  margin-right: auto;
+
+  @media (max-width: 768px) {
+    width: 95%;
+  }
+}
+
+//section
+.section {
+  padding: 3.75rem 0;
+}
+.section__top {
+  padding-top: 3.75rem;
+}
+.section__bottom {
+  padding-bottom: 3.75rem;
+}
+
+//Buttons
+.btn__custom{
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  min-width: 8rem;
+}
+.btn__primary{
+  @extend .btn__custom;
+  background: $color__secondary;
+  color: #fff;
+}
+.btn__secondary{
+  @extend .btn__custom;
+  background: #fff;
+}
+
+//Font-size
+.heading {
+  font-size: clamp(2.5rem, 4vw, 3rem);
+  font-weight: 700;
+}
+.subheading {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 700;
+}
+.cardheading {
+  font-size: clamp(1.8rem, 2vw, 2rem);
+  font-weight: 700;
+}
