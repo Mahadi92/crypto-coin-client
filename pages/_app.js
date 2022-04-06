@@ -7,7 +7,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/global/globals.css';
 import '../styles/global/global.scss';
 import '../styles/home.scss';
+import '../styles/footer.scss';
+
 import Navbar from "../components/global/Navbar";
+import Footer from "../components/global/Footer";
 
 function MyApp({ Component, pageProps }) {
 
@@ -20,6 +23,7 @@ function MyApp({ Component, pageProps }) {
 
       <Navbar />
       <Component {...pageProps} />
+      <Footer />
     </>
   )
 }

@@ -1,0 +1,7 @@
+@import './global/_variables.scss';
+@import './global/global.scss';
+
+.footer__container{
+  @extend .c_container, .section;
+  background: $bg__secondary;
+}
