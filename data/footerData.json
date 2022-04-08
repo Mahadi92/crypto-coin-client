@@ -3,50 +3,91 @@
     "footerListHeading": "Page",
     "footerList": [
       {
-        "link": "",
+        "link": "/",
+        "linkText": "Network Statistic"
+      },
+      {
+        "link": "/",
+        "linkText": "What is AkaCoin"
+      },
+      {
+        "link": "/",
+        "linkText": "Wallets"
+      },
+      {
+        "link": "/",
+        "linkText": "Quick Start Guide"
+      },
+      {
+        "link": "/",
         "linkText": ""
       },
       {
-        "link": "",
-        "linkText": ""
-      },
-      {
-        "link": "",
+        "link": "/",
         "linkText": ""
       }
     ]
   },
   {
-    "footerListHeading": "Page",
+    "footerListHeading": "Learn",
     "footerList": [
       {
-        "link": "",
-        "linkText": ""
+        "link": "/",
+        "linkText": "Blog"
       },
       {
-        "link": "",
-        "linkText": ""
+        "link": "/",
+        "linkText": "Video"
       },
       {
-        "link": "",
-        "linkText": ""
+        "link": "/",
+        "linkText": "Podcast"
+      },
+      {
+        "link": "/",
+        "linkText": "Network states"
       }
     ]
   },
   {
-    "footerListHeading": "Page",
+    "footerListHeading": "Support",
     "footerList": [
       {
-        "link": "",
-        "linkText": ""
+        "link": "/",
+        "linkText": "Customer Service"
       },
       {
-        "link": "",
-        "linkText": ""
+        "link": "/",
+        "linkText": "FAQ"
+      }
+    ]
+  },
+  {
+    "footerListHeading": "About AKA.Coin",
+    "footerList": [
+      {
+        "link": "/",
+        "linkText": "About us"
       },
       {
-        "link": "",
-        "linkText": ""
+        "link": "/",
+        "linkText": "Privacy policy"
+      },
+      {
+        "link": "/",
+        "linkText": "Term of use"
+      },
+      {
+        "link": "/",
+        "linkText": "Quick start guide"
+      },
+      {
+        "link": "/",
+        "linkText": "Language support"
+      },
+      {
+        "link": "/",
+        "linkText": "Cookie policy"
       }
     ]
   }
