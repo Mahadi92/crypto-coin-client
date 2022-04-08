@@ -1,3 +1,63 @@
 @import "./global/_variables";
 @import "./global/global.scss";
 
+/* ---------------------
+Home second section (What is Akacoin?)
+--------------------------*/
+.home__dual_div_container{
+  @extend .c_container, .section;
+  
+  .home_dd__content_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+    .home_dd__subheading_wrapper{
+      width: 40%;
+      h3{
+        @extend .subheading;
+        line-height: 1.5;
+      }
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+    }
+    .home_dd__paragraph_wrapper{
+      width: 60%;
+      .home_ddp__link{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: $color__secondary;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .home_dd__img_wrapper{
+    padding-top: $space__primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    @media (max-width: 1024px) {
+      gap: 1rem;
+      padding-top: 3rem;
+    }
+    .home_ddi__img1{
+      width: 30%;
+      background: $color__primary;
+      border-radius: 15px 
+    }
+    .home_ddi__img2{
+      width: 70%;
+    }
+  }
+}
