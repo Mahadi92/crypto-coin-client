@@ -61,3 +61,11 @@ Home second section (What is Akacoin?)
     }
   }
 }
+
+/* ---------------------
+  Home third section (Choose Your Wallets)
+-------------------------- */
+
+.home__wallet_container{
+  @extend .c_container, .section;
+}

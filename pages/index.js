@@ -1,12 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import whatIsAkacoinData from "../data/home/whatIsAkacoinData.json";
+import chooseWalletData from "../data/home/chooseWalletData.json";
 import { BsArrowRight } from "react-icons/bs"
+import WalletSlider from '../components/home/WalletSlider';
 
 export default function Home() {
-
-  // Second section data
-  const { sectionHeading, subHeading, paragraph, link, linkText, img1, img2, videoLink } = whatIsAkacoinData;
 
   return (
     <main>
@@ -14,6 +13,19 @@ export default function Home() {
 
       </header>
 
+      {/* ---------------------
+        Home third section (Choose Your Wallets)
+      -------------------------- */}
+      <section className="home__wallet_container">
+
+        <h2 className="heading">{chooseWalletData.sectionHeading}</h2>
+        <div className="home__wallet_card_wrapper">
+          <WalletSlider data={chooseWalletData.walletCards} />
+        </div>
+      </section>
+      {/* ---------------------
+        Home second section (What is Akacoin?)
+      -------------------------- */}
       <section className="home__dual_div_container">
         <h2 className="heading">{whatIsAkacoinData.sectionHeading}</h2>
 
@@ -30,13 +42,15 @@ export default function Home() {
         </div>
         <div className="home_dd__img_wrapper">
           <div className="home_ddi__img1">
-            <Image src={whatIsAkacoinData.img1} layout="responsive" width="80%" height="70" objectFit="content" alt="" />
+            <Image src={whatIsAkacoinData.img1} layout="responsive" width="100%" height="80" objectFit="content" alt="" />
           </div>
           <div className="home_ddi__img2">
-            <Image src={whatIsAkacoinData.img2} layout="responsive" width="100%" height="38" alt="" />
+            <Image src={whatIsAkacoinData.img2} layout="responsive" width="100%" height="35" alt="" />
           </div>
         </div>
       </section>
+
+
     </main>
   )
 }
