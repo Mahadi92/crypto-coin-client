@@ -7,13 +7,13 @@ import Script from "next/script"
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/global/globals.css';
 import '../styles/global/global.scss';
-import '../styles/footer.scss';
+import '../styles/Footer.scss';
 //page styles
-import '../styles/home.scss';
+import '../styles/Home.scss';
 //components styles
-import "../styles/walletSlider.scss"
-import "../styles/quickGuideCard.scss"
-import "../styles/facilitiesCard.scss"
+import "../styles/WalletSlider.scss";
+import "../styles/QuickGuideCard.scss";
+import "../styles/FacilitiesCard.scss";
 
 import Navbar from "../components/global/Navbar";
 import Footer from "../components/global/Footer";
