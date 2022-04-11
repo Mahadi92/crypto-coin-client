@@ -11,9 +11,9 @@ import '../styles/footer.scss';
 //page styles
 import '../styles/home.scss';
 //components styles
-import "../styles/walletSlider.scss";
 import "../styles/quickGuideCard.scss";
 import "../styles/facilitiesCard.scss";
+import "../styles/walletSlider.scss";
 
 import Navbar from "../components/global/Navbar";
 import Footer from "../components/global/Footer";
