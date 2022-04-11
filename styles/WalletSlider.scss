@@ -19,10 +19,11 @@
     z-index: 10;
   }
   .wallet_slider__right_arr{
-    @extend .wallet_slider__left_arr;
-    left: auto;
+    position: absolute;
+    top: 45%;
     right: -5%;
     @media (max-width: 768px){
+      top: 95%;
       right: 5%;
     }
   }
