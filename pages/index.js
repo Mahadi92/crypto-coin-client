@@ -2,8 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import whatIsAkacoinData from "../data/home/whatIsAkacoinData.json";
 import chooseWalletData from "../data/home/chooseWalletData.json";
+import quickGuideCardData from "../data/home/quickGuideCardData.json";
 import { BsArrowRight } from "react-icons/bs"
 import WalletSlider from '../components/home/WalletSlider';
+import QuickGuideCard from '../components/home/QuickGuideCard';
 
 export default function Home() {
 
@@ -50,6 +52,18 @@ export default function Home() {
           <WalletSlider data={chooseWalletData.walletCards} />
         </div>
       </section>
+
+      {/* ---------------------
+        Home Fourth section (Quick Start Guide)
+      -------------------------- */}
+      <section className="home_quick_guide__container">
+        <h2 className="heading">{quickGuideCardData.sectionHeading}</h2>
+        <div className="home__guide_card_wrapper">
+          <QuickGuideCard data={quickGuideCardData.quicGuideCards} />
+        </div>
+      </section>
+
+
 
     </main>
   )

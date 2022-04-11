@@ -1,0 +1,25 @@
+{
+  "sectionHeading": "Quick Start Guide",
+  "quicGuideCards": [
+    {
+      "image":"/static/wallet.png",
+      "cardHeading": "Create a wallet",
+      "cardParagraph": "Create a Wallet using either a desktop computer or an mobile device"
+    },
+    {
+      "image":"/static/hand_hold_bitcoin.png",
+      "cardHeading": "Buy ETH",
+      "cardParagraph": "You can buy Ethereum (ETH) directly on MetaMask or transfer it"
+    },
+    {
+      "image":"/static/laptop.png",
+      "cardHeading": "Connect your wallet",
+      "cardParagraph": "Access your wallet to AoaSwap by clicking ‘Connect to a wallet’"
+    },
+    {
+      "image":"/static/machine.png",
+      "cardHeading": "Swap ETH to AKO",
+      "cardParagraph": "You can start swapping as you have ETH available! Press ‘Select a token’ "
+    }
+  ] 
+}

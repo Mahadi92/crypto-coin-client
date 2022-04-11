@@ -1,0 +1,70 @@
+@import "./global/global.scss";
+@import "./global/variables";
+
+.quick_guide__card_wrapper{
+  display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 4rem 2rem;
+    
+    @media (max-width: 1024px){
+      grid-gap: 1rem;
+    }
+    @media (max-width: 768px){
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 2rem;
+    }
+  }
+  
+  .quick_card{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+    @media (max-width: 1024px){
+      gap: 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    @media (max-width: 768px){
+      flex-direction: row;
+      align-items: center;
+    }
+    @media (max-width: 640px){
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    
+    .quick_card__img{
+      width: 6rem;
+      height: 6rem;
+      background: $color__primary;
+      border-radius: 50%;
+    }
+
+    .quick_card__content{
+
+      width: 70%;
+      @media (max-width: 1024px){
+        width: 100%;
+      }
+      @media (max-width: 768px){
+        width: 70%;
+      }
+      @media (max-width: 640px){
+        width: 100%;
+      }
+      
+      .quick_card__heading{
+        @extend .cardheading;
+      }
+      
+      .quick_card__paragraph{
+        width: 70%;
+        @media (max-width: 1024px){
+          width: 95%;
+        }
+      }
+  }
+}

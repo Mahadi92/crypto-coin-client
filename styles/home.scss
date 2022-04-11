@@ -69,3 +69,9 @@ Home second section (What is Akacoin?)
 .home__wallet_container{
   @extend .c_container, .section;
 }
+/* ---------------------
+  Home fourth section (Quick Start Guide)
+-------------------------- */
+.home_quick_guide__container{
+  @extend .c_container, .section;
+}

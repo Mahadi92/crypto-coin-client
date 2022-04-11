@@ -12,6 +12,7 @@ import '../styles/footer.scss';
 import '../styles/home.scss';
 //components styles
 import "../styles/WalletSlider.scss"
+import "../styles/quickGuideCard.scss"
 
 import Navbar from "../components/global/Navbar";
 import Footer from "../components/global/Footer";
