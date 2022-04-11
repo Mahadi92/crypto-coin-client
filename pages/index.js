@@ -63,7 +63,29 @@ export default function Home() {
         </div>
       </section>
 
-
+      {/* ---------------------
+        Home sixth section (Transactions info)
+      -------------------------- */}
+      <section className="home_transactions_info__container">
+        <div className="home_transactions_info__wrapper">
+          <div className="transactions_info__card">
+            <label>Transactions/Second</label>
+            <h3>2,905</h3>
+          </div>
+          <div className="transactions_info__card">
+            <label>Total Transactions</label>
+            <h3>$64,540,470,129</h3>
+          </div>
+          <div className="transactions_info__card">
+            <label>Avg. Cost/Transaction</label>
+            <h3>$0.00025</h3>
+          </div>
+          <div className="transactions_info__card">
+            <label>Validator Nodes</label>
+            <h3>1,645</h3>
+          </div>
+        </div>
+      </section>
 
     </main>
   )

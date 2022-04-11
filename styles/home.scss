@@ -65,13 +65,48 @@ Home second section (What is Akacoin?)
 /* ---------------------
   Home third section (Choose Your Wallets)
 -------------------------- */
-
 .home__wallet_container{
   @extend .c_container, .section;
 }
+
 /* ---------------------
   Home fourth section (Quick Start Guide)
 -------------------------- */
 .home_quick_guide__container{
   @extend .c_container, .section;
+}
+
+/* ---------------------
+  Home fourth section (Transactions info)
+-------------------------- */
+.home_transactions_info__container{
+  width: 100%;
+  background: $color__secondary;
+  border-bottom: 1rem solid $color__primary;
+
+  .home_transactions_info__wrapper{
+    @extend .c_container, .section;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 4rem 2rem;
+    grid-gap: 4rem;
+    
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2,1fr);
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1,1fr);
+    }
+    .transactions_info__card{
+      label{
+        color: #fff;
+        padding-bottom: 0.5rem;
+      }
+      h3{
+        @extend .subheading;
+        color: #fff;
+      }
+
+    }
+  }
 }
