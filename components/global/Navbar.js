@@ -5,8 +5,8 @@ import { RiGlobalLine } from "react-icons/ri";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg c_container py-4">
-      <div className="container-fluid">
+    <nav className="navbar fixed-top navbar-expand-lg py-4" style={{ backgroundColor: "#F4F5FA" }}>
+      <div className="container-fluid c_container">
         <Link href="/">
           <a className="navbar-brand">
             <Image src="/static/brand_logo.png" width="150" height="30" alt="Crypto Coin" />

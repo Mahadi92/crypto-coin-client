@@ -1,6 +1,134 @@
 @import "./global/_variables";
 @import "./global/global.scss";
 
+
+/* ---------------------
+Home Hero section
+--------------------------*/
+.home_hero__container{
+  position: relative;
+  background: $bg__primary;
+  padding-top: 5rem;
+  
+  .home_hero__wrapper{
+    @extend .c_container, .section;
+    display: flex;
+    
+    @media (max-width: 768px){
+      flex-direction: column;
+    }
+
+    .hh__content_wrapper{
+      width: 50%;
+      @media (max-width: 1024px){
+        width: 60%;
+      }
+      @media (max-width: 768px){
+        width: 100%;
+      }
+
+      .hh__title{
+        font-weight: 600;
+        color: $color__dark;
+        .hh__title_blue{
+          font-weight: 700;
+          color: $color__secondary;
+
+        }
+        .hh__title_yellow{
+          @extend .hh__title_blue;
+          color: $color__primary;
+        }
+      }
+      .hh__heading{
+        font-size: clamp(3rem, 4vw, 4rem);
+        font-weight: 700;
+        line-height: 1.4;
+      }
+      .hh__paragraph{
+        width: 90%;
+        
+        @media (max-width: 1024px){
+          width: 100%;
+        }
+      }
+      .hh__btn_wrapper{
+        display: flex;
+        gap: 1rem;
+        padding-top: 3rem;
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 1rem;
+          min-width: 12rem;
+          background: $color__secondary;
+          color: #fff;
+          border-radius: 50px;
+
+          &:hover{
+            background: #fff;
+            color: $color__dark;
+          }
+          
+          &:last-child{
+            background: #fff;
+            color: $color__dark;
+
+            &:hover{
+              background: $color__secondary;
+              color: #fff;
+
+              svg{
+                fill: #fff; 
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .hh__img_wrapper{
+      width: 50%;
+      margin-left: -10%;
+      @media (max-width: 1240px){
+        margin-left: -5%;
+      }
+      @media (max-width: 1024px){
+        width: 40%;
+        margin-left: 0;
+      }
+      @media (max-width: 768px){
+        display: none;
+      }
+    }
+  }
+
+  .hh__floating_img{
+    position: absolute;
+    right: 45%;
+    top: 5rem;
+    @media (max-width: 1024px){
+      right: 30%;
+    }
+    @media (max-width: 800px){
+      display: none;
+    }
+  }
+  .hh__floating_blur_img{
+    position: absolute;
+    right: 0;
+    top: 30%;
+    @media (max-width: 1024px){
+      display: none;
+    }
+  }
+}
+
+
+
+
 /* ---------------------
 Home second section (What is Akacoin?)
 --------------------------*/

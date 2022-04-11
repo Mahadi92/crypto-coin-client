@@ -4,8 +4,9 @@ import whatIsAkacoinData from "../data/home/whatIsAkacoinData.json";
 import chooseWalletData from "../data/home/chooseWalletData.json";
 import quickGuideCardData from "../data/home/quickGuideCardData.json";
 import facilitiesCardData from "../data/home/facilitiesCardData.json";
+import heroData from "../data/home/homeHeroData.json";
 
-import { BsArrowRight } from "react-icons/bs"
+import { BsGithub, BsArrowRight } from "react-icons/bs"
 import WalletSlider from '../components/home/WalletSlider';
 import QuickGuideCard from '../components/home/QuickGuideCard';
 import FacilitiesCard from '../components/home/FacilitiesCard';
@@ -14,8 +15,35 @@ export default function Home() {
 
   return (
     <main>
-      <header>
-
+      <header className="home_hero__container">
+        <div className="home_hero__wrapper">
+          <div className="hh__content_wrapper">
+            <p className="hh__title">
+              {heroData.introText.text} <span className="hh__title_blue">{heroData.introText.blueText}</span><span className="hh__title_yellow">{heroData.introText.yellowText}</span>
+            </p>
+            <h1 className="hh__heading">
+              {heroData.heroHeading}
+            </h1>
+            <p className="hh__paragraph">{heroData.heroParagraph}</p>
+            <div className="hh__btn_wrapper">
+              <Link href={heroData.heroBtn1.link}>
+                <a className="">{heroData.heroBtn1.text}</a>
+              </Link>
+              <Link href={heroData.heroBtn2.link}>
+                <a className=""><BsGithub /> {heroData.heroBtn2.text}</a>
+              </Link>
+            </div>
+          </div>
+          <div className="hh__img_wrapper">
+            <Image src={heroData.heroMainImg} width="500" height="550" alt={heroData.heading} />
+          </div>
+        </div>
+        <div className="hh__floating_img">
+          <Image src={heroData.heroFloatingImg1} width="150" height="150" alt={heroData.heading} />
+        </div>
+        <div className="hh__floating_blur_img">
+          <Image src={heroData.heroFloatingImg2} width="150" height="350" alt={heroData.heading} />
+        </div>
       </header>
 
       {/* ---------------------
