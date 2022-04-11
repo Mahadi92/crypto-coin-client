@@ -3,9 +3,12 @@ import Link from 'next/link';
 import whatIsAkacoinData from "../data/home/whatIsAkacoinData.json";
 import chooseWalletData from "../data/home/chooseWalletData.json";
 import quickGuideCardData from "../data/home/quickGuideCardData.json";
+import facilitiesCardData from "../data/home/facilitiesCardData.json";
+
 import { BsArrowRight } from "react-icons/bs"
 import WalletSlider from '../components/home/WalletSlider';
 import QuickGuideCard from '../components/home/QuickGuideCard';
+import FacilitiesCard from '../components/home/FacilitiesCard';
 
 export default function Home() {
 
@@ -61,6 +64,13 @@ export default function Home() {
         <div className="home__guide_card_wrapper">
           <QuickGuideCard data={quickGuideCardData.quicGuideCards} />
         </div>
+      </section>
+
+      {/* ---------------------
+        Home fifth section (Transactions info)
+      -------------------------- */}
+      <section className="home_facilities__container">
+        <FacilitiesCard data={facilitiesCardData} />
       </section>
 
       {/* ---------------------

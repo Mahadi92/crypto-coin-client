@@ -77,6 +77,13 @@ Home second section (What is Akacoin?)
 }
 
 /* ---------------------
+  Home fifth section (Transactions info)
+-------------------------- */
+.home_facilities__container{
+  @extend .c_container, .section;
+}
+
+/* ---------------------
   Home fourth section (Transactions info)
 -------------------------- */
 .home_transactions_info__container{
