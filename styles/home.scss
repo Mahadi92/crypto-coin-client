@@ -91,7 +91,10 @@ Home Hero section
     
     .hh__img_wrapper{
       width: 50%;
-      margin-left: -10%;
+
+      @media (max-width: 1440px){
+        margin-left: -10%;
+      }
       @media (max-width: 1240px){
         margin-left: -5%;
       }
