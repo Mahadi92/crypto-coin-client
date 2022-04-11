@@ -14,16 +14,6 @@ export default function Home() {
       </header>
 
       {/* ---------------------
-        Home third section (Choose Your Wallets)
-      -------------------------- */}
-      <section className="home__wallet_container">
-
-        <h2 className="heading">{chooseWalletData.sectionHeading}</h2>
-        <div className="home__wallet_card_wrapper">
-          <WalletSlider data={chooseWalletData.walletCards} />
-        </div>
-      </section>
-      {/* ---------------------
         Home second section (What is Akacoin?)
       -------------------------- */}
       <section className="home__dual_div_container">
@@ -50,6 +40,16 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ---------------------
+        Home third section (Choose Your Wallets)
+      -------------------------- */}
+      <section className="home__wallet_container">
+
+        <h2 className="heading">{chooseWalletData.sectionHeading}</h2>
+        <div className="home__wallet_card_wrapper">
+          <WalletSlider data={chooseWalletData.walletCards} />
+        </div>
+      </section>
 
     </main>
   )
