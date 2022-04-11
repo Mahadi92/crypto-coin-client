@@ -1,0 +1,144 @@
+@import "./global/variables";
+@import "./global/global";
+
+.facilities_card__container{
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  
+  @media (max-width: 1240px) { 
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.facilities_card__wrapper{
+  position: relative;
+  width: 28%;
+  min-width: 25rem;
+  min-height: 32rem;
+  background: $color__secondary;
+  border-radius: 15px;
+  
+  &:last-child{
+    width: 35%;
+  }
+  &:hover{
+    background: $color__primary;
+  }
+  
+  @media (max-width: 1024px){
+    width: 50%;
+    min-height: 28rem;
+    
+    &:last-child{
+      width: 50%;
+      min-height: 30rem;
+    }
+  }
+  @media (max-width: 768px){
+    width: 100%;
+    min-height: 28rem;
+    
+    &:last-child{
+      width: 100%;
+      min-height: 35rem;
+    }
+    @media (max-width: 400px){
+      min-width: auto;
+    }
+  }
+
+  .fc__card_illustration_wrapper{
+    .fc__card_illustration1{
+      position: absolute;
+      width: 30%;
+      background: #0C20CB;
+      top: 8%;
+      height: 4rem;
+      right: 0;
+      border-radius: 50px 0 0 50px;
+    }
+    .fc__card_illustration2{
+      position: absolute;
+      width: 40%;
+      height: 4.5rem;
+      top: 35%;
+      left: 0;
+      background: #0C20CB;
+      border-radius: 0 50px 50px 0;
+    }
+  }
+  .fc__card_illustration3{
+    position: absolute;
+    width: 40%;
+    height: 5rem;
+    bottom: 0;
+    right: 0;
+    background: #0C20CB;
+    border-radius: 50px 0 15px 30px;
+  }
+}
+.facilities_card{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  .fc__content{
+    padding: 3rem;
+
+    .fc__header{
+      @extend .heading;
+      text-align: left;
+      color: #fff;
+      padding-bottom: 2rem;
+
+      @media (max-width: 1024px) {
+        padding-bottom: rem;
+      }
+    }
+    .fc__paragraph{
+      color: #fff;
+      line-height: 1.8;
+      letter-spacing: 1.5px;
+    }
+  }
+  .fc__btn{
+    width: 50%;
+    display: block;
+    background: $color__primary;
+    border-radius: 0 50px 50px 0;
+    padding: 1.4rem 0 1.4rem 3rem;
+    margin-bottom: 3rem;
+
+    @media (max-width: 1280px) {
+      width: 45%
+    }
+    @media (max-width: 768px) {
+      width: 35%
+    }
+  }
+}
+
+
+// Hover effect
+.facilities_card__wrapper:hover .fc__card_illustration1,
+.facilities_card__wrapper:hover .fc__card_illustration2,
+.facilities_card__wrapper:hover .fc__card_illustration3
+{
+  background: #EEBC28;
+}
+
+.facilities_card__wrapper:hover .fc__btn{
+  background: $color__secondary;
+  color: #fff;
+}
+
+.facilities_card__wrapper:hover .fc__header,
+.facilities_card__wrapper:hover .fc__paragraph
+{
+  color: $color__dark;
+}

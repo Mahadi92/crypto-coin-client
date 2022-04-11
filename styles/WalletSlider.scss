@@ -32,10 +32,9 @@
 }
 .card__wrapper{
   position: relative;
-  height: 30rem;
+  min-height: 30rem;
   background: $color__secondary;
   border-radius: 15px;
-  overflow: visible;
   margin-bottom: 2.5rem;
 
   &:hover{
