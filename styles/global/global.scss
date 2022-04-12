@@ -81,14 +81,46 @@
   font-weight: 700;
 }
 
-
+// bootstrap navbar toggler
 .custom-toggler .navbar-toggler-icon-custom{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(31, 51, 216)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-
 
 a {
   color: inherit;
   text-decoration: none !important;
   cursor: pointer;
+}
+
+
+// Dashboard layout
+.dashboard__container {
+  position: relative;
+  background: $bg__primary;
+  .dashboard__sidebar {
+    width: 20%;
+    min-width: 12rem;
+    background: $color__secondary;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: visible;
+    z-index: 5;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    @media (max-width: 1024px) {
+      position: fixed;
+      min-width: 10rem;
+    }
+    transition: all ease 0.5s;
+  }
+  
+  .dashboard__content {
+    width: 80%;
+    float: right;
+    background: $bg__secondary;
+    min-height: 100vh;
+  }
 }

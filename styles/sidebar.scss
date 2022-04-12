@@ -1,0 +1,38 @@
+@import "./global/variables";
+@import "./global/global.scss";
+
+
+.sidebar__container{
+  padding: 2rem;
+  @media (max-width: 1024px) {
+    padding: 0.5rem;
+  }
+    .sidebar__image{
+      background: $bg__primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      border-radius: 50px;
+    }
+
+    .sidebar__link_wrapper{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-top: 1rem;
+
+      .sidebar__link{
+        color: #fff;
+        background: #0C20CB;
+        padding: 1rem;
+        border-radius: 15px;
+        
+        &:hover{
+          background: $color__primary;
+          color: $color__dark;
+        }
+      }
+    }
+}
+

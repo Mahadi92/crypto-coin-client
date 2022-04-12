@@ -56,6 +56,11 @@ Home Hero section
         display: flex;
         gap: 1rem;
         padding-top: 3rem;
+
+        @media (max-width: 1024px){
+          flex-wrap: wrap;
+        }
+
         a{
           display: flex;
           justify-content: center;

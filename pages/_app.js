@@ -1,4 +1,6 @@
 import Script from "next/script"
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 /* -------------
     All styles
@@ -11,14 +13,29 @@ import '../styles/footer.scss';
 //page styles
 import '../styles/home.scss';
 //components styles
+import "../styles/sidebar.scss";
 import "../styles/quickGuideCard.scss";
 import "../styles/facilitiesCard.scss";
 import "../styles/walletCard.scss";
 
 import Navbar from "../components/global/Navbar";
 import Footer from "../components/global/Footer";
+import Sidebar from "../components/global/Sidebar";
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
+  const [isDashboard, setIsDashboard] = useState(false);
+
+  const router = useRouter()
+
+  useEffect(() => {
+    if (router.pathname.includes("dashboard")) {
+      setIsDashboard(true);
+    } else {
+      setIsDashboard(false);
+    }
+  }, [router.pathname])
+
+
 
   return (
     <>
@@ -27,9 +44,30 @@ function MyApp({ Component, pageProps }) {
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous" />
 
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      {
+        isDashboard ? (
+          <main className="dashboard__container">
+
+            <div className="dashboard__sidebar" >
+              <Sidebar />
+            </div>
+
+            <div className="dashboard__content">
+              <Component {...pageProps} />
+            </div>
+
+          </main>
+        )
+          :
+
+          (
+            <>
+              <Navbar />
+              <Component {...pageProps} />
+              <Footer />
+            </>
+          )
+      }
     </>
   )
 }
